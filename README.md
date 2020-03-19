@@ -27,4 +27,4 @@ Solution for `pg` gem problem for Mac:
 -
 * install PostgreSQL 12 library as described on the PostgreSQL page http://www.postgresql.org/download/macosx/
 * check if you can find the installation open it under `/Library/PostgreSQL/12`
-* run `sudo PATH=$PATH:/Library/PostgreSQL/x.y/bin bundle install`
+* run `sudo PATH=$PATH:/Library/PostgreSQL/12/bin bundle install`
