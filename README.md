@@ -16,12 +16,12 @@ Stack of technologies:
 
 Commands:
 -
-* docker-compose up
+* `docker-compose up`
 
 In another terminal:
 
-* docker-compose run web rake db:create
-* docker-compose run web rake db:migrate
+* `docker-compose run web rake db:create`
+* `docker-compose run web rake db:migrate`
 
 Solution for `pg` gem problem for Mac:
 -
