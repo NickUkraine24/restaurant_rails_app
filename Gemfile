@@ -27,6 +27,14 @@ gem 'jbuilder', '~> 2.5'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+
+gem 'webpacker'
+# Use react-rails gem for using React
+gem 'react-rails'
+
+# For installing webpacker gem
+gem 'babel-source', '~> 5.8', '>= 5.8.35'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
