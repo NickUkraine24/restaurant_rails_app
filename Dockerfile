@@ -11,6 +11,7 @@ COPY Gemfile.lock /restaurant_rails_app/Gemfile.lock
 
 RUN bundle install
 COPY . /restaurant_rails_app
+RUN yarn install --ignore-engines
 
 # Add a script to be executed every time the container starts.
 COPY entrypoint.sh /usr/bin/
