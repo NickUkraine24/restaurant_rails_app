@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe Ingredient, type: :model do
-  context "creating Ingredient is valid " do
+  context "created Ingredient is valid " do
     it "with valid attributes" do
       expect(Ingredient.new name: 'Name of ingredient', priority: 2).to be_valid
     end
@@ -17,7 +17,7 @@ RSpec.describe Ingredient, type: :model do
     end
   end
 
-  context "creating Ingredient is not valid " do
+  context "created Ingredient is not valid " do
     it "without any attributes" do
       expect(Ingredient.new).not_to be_valid
     end
