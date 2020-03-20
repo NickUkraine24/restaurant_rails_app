@@ -1,7 +1,6 @@
 FROM ruby:2.3.6
 
-RUN apt-get update -qq && curl -sL https://deb.nodesource.com/setup_13.x | bash && apt-get install -y nodejs postgresql-client
-RUN npm install -g yarn
+RUN apt-get update -qq && curl -sL https://deb.nodesource.com/setup_12.x | bash && apt-get install -y nodejs postgresql-client && npm install -g yarnyarn install --ignore-engines
 
 RUN mkdir /restaurant_rails_app
 WORKDIR /restaurant_rails_app
