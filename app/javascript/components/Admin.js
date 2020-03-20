@@ -15,4 +15,5 @@ class Admin extends React.Component {
 Admin.propTypes = {
   meat: PropTypes.string
 };
+
 export default Admin;
