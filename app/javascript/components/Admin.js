@@ -6,14 +6,14 @@ class Admin extends React.Component {
   render () {
     return (
         <div>
-          <div>Meat: {this.props.meat}</div>
+          <div>Meat: {this.props.data}</div>
         </div>
     );
   }
 }
 
 Admin.propTypes = {
-  meat: PropTypes.string
+  data: PropTypes.string
 };
 
 export default Admin;
