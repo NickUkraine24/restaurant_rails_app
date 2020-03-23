@@ -1,1 +1,3 @@
-<%= react_component 'ingredient/IngredientTable', { data: @ingredients }, prerender: true %>
+<%= javascript_pack_tag 'index', { data: @ingredients } %>
+<%= content_tag :div, id: 'props-data', data: @ingredients.to_json do %>
+<% end %>

@@ -1,0 +1,3 @@
+<%= javascript_pack_tag 'index', { data: @ingredients } %>
+<%= content_tag :div, id: 'props-data', data: @ingredient.to_json do %>
+<% end %>
