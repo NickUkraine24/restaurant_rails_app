@@ -2,7 +2,7 @@ module Admin
   class IngredientsController < ApplicationController
 
     def index
-      @ingredients = Ingredient.all
+      @ingredients = Ingredient.all.order('priority', 'name')
     end
 
     def show
@@ -14,7 +14,7 @@ module Admin
     end
 
     def new
-
+      @ingredient = Ingredient.new
     end
 
     def edit

@@ -1,21 +1,23 @@
 import React from 'react';
 import { withRouter } from "react-router";
-import { Alert } from 'reactstrap';
-import { Table } from 'reactstrap';
+import { NavLink } from "react-router-dom";
+import { Alert, Table, Button } from 'reactstrap';
 
 
 class IngredientTable extends React.Component {
   constructor(props) {
     super(props);
-    console.log(props);
+
     this.state = {
       ingredients: props.data
     };
   }
 
-  handleRowClick(id) {
-    this.props.history.push('ingredients/'+id);
-    window.location.reload();
+  handleRowClick(row) {
+    this.props.history.push({
+      pathname: `ingredients/${row.id}`,
+      data: row
+    });
   }
 
   render() {
@@ -24,6 +26,7 @@ class IngredientTable extends React.Component {
         <Alert color="info">
           <strong>Ingredients</strong> Table:
         </Alert>
+
         <Table hover>
           <thead>
             <tr>
@@ -34,7 +37,7 @@ class IngredientTable extends React.Component {
           </thead>
           <tbody>
             {this.state.ingredients.map((row, index) => (
-              <tr key={row.id} onClick={() => this.handleRowClick(row.id)} >
+              <tr key={row.id} onClick={() => this.handleRowClick(row)} >
                 <th>{index+1}</th>
                 <th>{row.name}</th>
                 <th>{row.priority}</th>
@@ -42,6 +45,10 @@ class IngredientTable extends React.Component {
             ))}
           </tbody>
         </Table>
+
+        <NavLink to={'/admin/ingredients/new'}>
+          <Button color="info" size="lg" style={{width: '18%'}}> New ingredient </Button>
+        </NavLink>
       </React.Fragment>
     );
   }
