@@ -1,7 +1,7 @@
 # Restaurant Rails App
 
-Status of Last Deployment:<br>
-<img src="https://github.com/NickUkraine24/restaurant_rails_app/workflows/CI.svg?branch=master"><br>
+Status of Last Commit:<br>
+<img src="https://github.com/NickUkraine24/restaurant_rails_app/workflows/CI/badge.svg?branch=master"><br>
 
 Stack of technologies:
 
