@@ -1,5 +1,8 @@
 # Restaurant Rails App
 
+Status of Last Deployment:<br>
+<img src="https://github.com/NickUkraine24/restaurant_rails_app/workflows/CI.svg?branch=master"><br>
+
 Stack of technologies:
 
 * Ruby 2.3.6
